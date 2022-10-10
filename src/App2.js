@@ -20,11 +20,11 @@ import ConstructForm from './pages/constructs/ConstructForm';
 import AdminProfile from './pages/profile/AdminProfile';
 import Ejemplo from './pages/constructs/Ejemplo';
 
-function App() {
+function App2() {
   return (
     <div className="App">
 
-   <Navbar/>
+
 
     <Routes>
 
@@ -61,4 +61,4 @@ function App() {
   );
 }
 
-export default App;
+export default App2;

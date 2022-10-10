@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -36,3 +37,286 @@
     transform: rotate(360deg);
   }
 }
+
+/* mis estilos */
+
+.active-nav {
+  color:#61dafb;
+}
+
+.inactive-nav {
+  color: palevioletred;
+}
+
+.navigation-bar {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card-image {
+  height: 250px;
+  width: 171px;
+  align-self: center;
+  margin-top: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.tank-image,
+.support-image,
+.attacker-image,
+.vanguard-image {
+  width: 30px;
+  border: 1px solid darkred;
+  border-radius: 8px;
+}
+
+.team-image {
+  width: 30px;
+  border: 1px solid darkblue;
+  border-radius: 8px;
+}
+
+.energy-image {
+ width: 30px;
+ height: 30px;
+ border: 1px solid rgb(246, 98, 223);
+ border-radius: 8px;
+}
+
+.card-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+
+.construct-container {
+  display: flex;
+  flex-direction: row;
+  row-gap: 10px;
+  column-gap: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.construct-card {
+  border-color: #3190bc;
+}
+
+.construct-file {
+  text-align: left;
+}
+
+#constructs-list {
+  padding: 15px;
+}
+
+.text-card {
+  font-size: 15px;
+}
+
+.card-seemore-button {
+  padding-left: 4rem;
+  padding-bottom: 1rem;
+  position:absolute;
+  bottom: 0;
+}
+
+.energy-select {
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+}
+
+.rank-icon {
+  height: 30px;
+}
+
+.seemore-button {
+padding: 0.5em 1.8em;
+ border: 2px solid #3190bc;
+ border-radius: 10px;
+ position: relative;
+ overflow: hidden;
+ background-color: transparent;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 16px;
+ transition: .3s;
+ z-index: 1;
+ font-family: inherit;
+ color: #3190bc;
+ /* 17C3B2 */
+}
+
+.seemore-button:before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #3190bc;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+  background-image: url("https://drizzit.net/punishing/imgs/teams/grayraven-team-white.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+
+ .seemore-button:hover::before {
+  width: 105%;
+ }
+ 
+ .seemore-button:hover {
+  color: transparent;
+ }
+
+ #construct-edit-form {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+ }
+
+ /* Prueba de barra buscadora */
+ /* .inputBuscar{
+  width: 50% !important;
+}
+
+table{
+  min-width: 500px;
+}
+
+.containerInput{
+  align-items: end;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 988px){
+  
+  .inputBuscar{
+    width: 100% !important;
+  }
+
+  .App{
+    padding: 40px 5px;
+  }
+
+  
+.containerInput{
+  padding-bottom: 15px;
+}
+
+} */
+
+/* .model-button {
+  background-color: blue;
+} */
+
+.model-button:hover {
+ background-color: rgb(101, 216, 255) !important;
+}
+
+#perfil-container {
+  display: grid;
+  grid-template-columns: 20% 35% 35%;
+  grid-template-rows: 40% 50%;
+  gap: 10px;
+  min-height: 100vh;
+  min-width: 100hv;
+  justify-content: center;
+  align-content: center;
+
+}
+
+#section1-perfil {
+  background-color: darkred;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  border: 5px double black;
+  border-collapse: separate;
+  border-spacing: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.construct-pic {
+  /* height: 383px; */
+  max-width: 92%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#section2-perfil {
+  background-color: lightblue;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+#section3-perfil {
+  background-color: pink;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3 ;
+}
+
+#section4-perfil {
+  background-color: palegoldenrod;
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+#construct-details {
+  min-height: 100vh;
+  margin-top: 15px;
+}
+
+#construct-details button {
+  margin-bottom: -20px;
+}
+
+.table-perfil{
+  border: 3px double black;
+  border-collapse: separate;
+  border-spacing: 5px;
+  width: 100%;
+}
+
+
+.table-perfil-section2 {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 40px;
+  padding-bottom: 400px;
+  border: 3px dotted black;
+  border-collapse: separate;
+  border-spacing: 5px;
+  min-width: 50%;
+  min-height: 98%;
+  /* position: relative;
+  left: 25%; */
+  min-width: 500px;
+  text-align: left;
+}
+
+.right-cell {
+  background-color: lightgray;
+  height: 40px;
+  padding-left: 30px;
+  width: 250px;
+}
+
+.profile-image {
+ width: 50px;
+}
+
