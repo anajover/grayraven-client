@@ -7,14 +7,15 @@ import { BrowserRouter } from 'react-router-dom';
 import { AuthWrapper } from './context/auth.context';
 import App1 from './App1';
 import App2 from './App2';
+import Navbar from './components/Navbar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
   <AuthWrapper>
-    {/* <App /> */}
-    <App1/>
-    <App2/>
+    <App />
+    {/* <App1/>
+    <App2/> */}
   </AuthWrapper>
   </BrowserRouter>
 );

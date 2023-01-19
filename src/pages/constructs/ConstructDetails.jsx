@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
+import Navbar from '../../components/Navbar';
 import { AuthContext } from '../../context/auth.context';
 import { getConstructDetailsService } from '../../services/construct.services';
 import ConstructEdit from './ConstructEdit';
@@ -39,6 +40,7 @@ function ConstructDetails() {
       {isLoggedIn === true ? (
 
         <div id="construct-details">
+        <Navbar/>
         <h3>Detalles de {constructDetails.name}</h3>
         {/* <Link to={`/constructs/${id}/edit`}><button>Editar</button></Link> */}
         <Link to=<ConstructEdit/> target="edicion"><button>Editar</button></Link>

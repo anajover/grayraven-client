@@ -5,6 +5,7 @@ import { getAllConstructsService } from '../../services/construct.services'
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Card from 'react-bootstrap/Card';
+import Navbar from '../../components/Navbar';
 
 function ConstructList() {
 
@@ -46,7 +47,7 @@ function ConstructList() {
 
   return (
     <div>
-
+        <Navbar/>
       <hr/>
         <div>
           <h3>Lista de Personajes</h3>
