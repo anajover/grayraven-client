@@ -49,7 +49,7 @@ function App() {
 
       {/* Rutas Administrador */}
       <Route path="/admin" element={ <Admin /> } />
-      <Route path="/admin/profile" element={<AdminProfile/>}/>
+      <Route path="/profile" element={<AdminProfile/>}/>
 
       {/* Routes de errores */}
       <Route path="/error" element={ <Error/> } />

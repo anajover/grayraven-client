@@ -6,7 +6,7 @@ function Home() {
   return (
     <div>
     <Navbar/>
-      <h3>Home</h3>
+      <h3>Bienvenidos a la página en español de Gray Raven</h3>
       
     </div>
   )

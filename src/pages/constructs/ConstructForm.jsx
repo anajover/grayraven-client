@@ -262,6 +262,7 @@ function ConstructForm() {
                 <option value={"Strike Hawk"}>Strike Hawk</option>
                 <option value={"Artic Route Union"}>A.R.U.</option>
                 <option value={"Unclassified"}>Unclassified</option>
+                <option value={"Nier Automata"}>Nier: Automata</option>
             </select>
             <br/>
             <label htmlFor="file">Archivo</label>
