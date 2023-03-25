@@ -6,11 +6,15 @@ import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Card from 'react-bootstrap/Card';
 import Navbar from '../../components/Navbar';
+import { useContext } from 'react';
+import { AuthContext } from '../../context/auth.context';
 
 function ConstructList() {
 
   const [ allConstructs, setAllConstructs ] = useState([]);
   const [ filterConstruct, setFilterConstruct] = useState([]);
+
+  const {isLoggedIn} = useContext(AuthContext)
 
   const navigate = useNavigate()
 
@@ -51,6 +55,9 @@ function ConstructList() {
       <hr/>
         <div>
           <h3>Lista de Personajes</h3>
+          {isLoggedIn === true ? (
+            <Link to={"/create"}>Crear personaje</Link>
+          )}
         </div>
        <hr/>
 
