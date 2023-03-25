@@ -57,7 +57,7 @@ function ConstructList() {
           <h3>Lista de Personajes</h3>
           <div>
           {isLoggedIn === true && (
-            <Link to={"/create"}>Crear personaje</Link>
+            <Link to={"/constructs/create"}>Crear personaje</Link>
           )}
           </div>
         </div>
