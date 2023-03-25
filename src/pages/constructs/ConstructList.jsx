@@ -55,9 +55,11 @@ function ConstructList() {
       <hr/>
         <div>
           <h3>Lista de Personajes</h3>
-          {isLoggedIn === true ? (
+          <div>
+          {isLoggedIn === true && (
             <Link to={"/create"}>Crear personaje</Link>
           )}
+          </div>
         </div>
        <hr/>
 
